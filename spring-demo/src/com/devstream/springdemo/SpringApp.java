@@ -8,11 +8,14 @@ public class SpringApp {
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		
 //		gets bean from spring container
-		Coach theCoach = context.getBean("myCoach", Coach.class);
+		Coach theCoach = context.getBean("myCoach", BaseballCoach.class);
+		Coach cricketCoach = context.getBean("cricketCoach", CricketCoach.class);
 		
 //		call methods on the bean
 		System.out.println(theCoach.getDailyRoutine());
 		System.out.println(theCoach.getDailyFortune());
+		
+		System.out.println(cricketCoach.getDailyFortune());
 		
 //		close the context
 		context.close();

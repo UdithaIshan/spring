@@ -10,10 +10,17 @@
     <!-- Define dependency -->
     <bean id="myFortune" class="com.devstream.springdemo.HappyFortuneService"></bean>
 
+
+
     <!-- Define your beans here -->
     <bean id="myCoach" class="com.devstream.springdemo.BaseballCoach">
     	<!-- Setup constructor injection -->
     	<constructor-arg ref="myFortune" />
+    </bean>
+    
+    <bean id="cricketCoach" class="com.devstream.springdemo.CricketCoach">
+    	<!-- setup setter injection -->
+    	<property name="fortuneService" ref="myFortune"></property>
     </bean>
     
 </beans>
