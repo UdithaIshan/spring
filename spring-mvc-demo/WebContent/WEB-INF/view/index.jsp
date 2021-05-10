@@ -8,6 +8,6 @@
 </head>
 <body>
 	<h1>INDEX PAGE</h1>
-	<a href="form">GO TO FORM</a>
+	<a href="hello/form">GO TO FORM</a>
 </body>
 </html>
