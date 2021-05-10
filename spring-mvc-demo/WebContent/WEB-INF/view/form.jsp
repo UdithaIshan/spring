@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="processFormWithModel" method="get">
+	<form action="processFormWithModelV2" method="get">
 		<input type="text" placeholder="Your Name" name="myname">
 		<input type="submit" placeholder="SUBMIT">
 	</form>
